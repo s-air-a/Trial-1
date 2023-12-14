@@ -1,0 +1,101 @@
+/* Reset some default styles for better control */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    background-color: #444;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 40px;
+}
+
+#about {
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #eee;
+}
+
+.project {
+    text-align: center;
+    margin: 20px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+#article {
+    text-align: center;
+    display: flex;
+}
+
+article {
+    width: 45%; /* Set a width for each article to leave some space between them */
+    border: 2px solid #333;;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+progress {
+    width: 300px; /* Set the width of the progress bar */
+    height: 20px; /* Set the height of the progress bar */
+}
+
+/* Optional styling for a more attractive appearance */
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+#resume {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Add more CSS to style your page as desired */

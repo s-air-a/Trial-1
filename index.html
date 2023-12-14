@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">   <!--link to css file-->
+    <meta name="author" content="Saira Benoj">
+    <title>My Personal Profile</title>
+</head> 
+
+<body>
+    <header>
+        <h1>Saira Benoj</h1>
+        <p>Full Stack Developer | Creative Designer | Intern</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#article">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius, lorem in luctus iaculis, nulla justo ullamcorper odio, in fringilla est turpis vel sapien.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Project description goes here.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Project description goes here.</p>
+        </div>
+    </section>
+
+    <section id="article">
+        <h1>Articles</h1>
+        <article>
+            <p>This is the introduction to my article...</p>
+            <p>This is to learn how to use an article tag...</p>
+            <p>Here's some more content...</p>
+    
+            <!--subsection of the article-->
+            <section>
+                <h2>Subheading</h2>
+                <p>More detailed information goes here...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla. Commodo elit at imperdiet dui accumsan sit. Faucibus scelerisque eleifend donec pretium. Neque convallis a cras semper auctor neque vitae. Libero enim sed faucibus turpis in eu mi bibendum. Platea dictumst quisque sagittis purus sit amet. Ut lectus arcu bibendum at varius vel pharetra. Fames ac turpis egestas sed tempus urna. </p>
+            </section>
+    
+            <footer>
+                <p>Written by Saira Benoj</p>
+                <p><a href="#comments">Comments</a></p>
+            </footer>
+        </article>
+        
+        <article>
+            <p>This is the introduction to my article...</p>
+            <p>This is to learn how to use an article tag...</p>
+            <p>Here's some more content...</p>
+    
+            <section>
+                <h2>Subheading</h2>
+                <p>More detailed information goes here...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla. Commodo elit at imperdiet dui accumsan sit. Faucibus scelerisque eleifend donec pretium. Neque convallis a cras semper auctor neque vitae. Libero enim sed faucibus turpis in eu mi bibendum. Platea dictumst quisque sagittis purus sit amet. Ut lectus arcu bibendum at varius vel pharetra. Fames ac turpis egestas sed tempus urna. </p>
+            </section>
+    
+            <footer>
+                <p>Written by Saira Benoj</p>
+                <p><a href="#comments">Comments</a></p>
+            </footer>
+        </article>   
+    </section>
+
+    <div id="resume">
+        <h1>Resume Upload Progress</h1>
+
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept="image/*">
+
+        <br><br>
+
+        <!-- Adding accessibility attributes to the progress element -->
+        <progress id="uploadProgress" value="0" max="100" role="progressbar" aria-labelledby="uploadProgressLabel"></progress>
+        <!-- associates the progress bar with an accessible label for screen readers. -->
+
+        <br><br>
+
+        <button onclick="simulateFileUpload()">Start Upload</button>
+
+        <script>
+            function simulateFileUpload() {
+                var progressBar = document.querySelector('progress');
+                var value = 0;
+
+                var interval = setInterval(function() {
+                    if (value < 100) {
+                        value += 10;
+                        progressBar.value = value;
+                    } else {
+                        clearInterval(interval);
+                        alert('File upload complete!');
+                    }
+                }, 500);
+            }
+        </script>
+    </div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact me at: sairabenoj@email.com</p>
+    </section>
+</body>
+</html>
